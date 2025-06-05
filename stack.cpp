@@ -26,5 +26,10 @@ top = NULL; // intialize the stack with a null top pointer
 }
 
 //push operation insert an elemenet onto the top of the stack
+int push (int value)
+{
+Node* newNode = new Node(); 
+
+}
 
 }
