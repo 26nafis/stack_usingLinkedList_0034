@@ -69,3 +69,8 @@ current = current -> next;
 }// return the value of the top node
 
 };
+
+int main()
+{
+    stack stack;
+
