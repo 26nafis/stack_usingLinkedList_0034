@@ -17,7 +17,7 @@ class Node
 class stack
 {
 private:
-Node *top // pointer to the top node of the stack
+Node *top ;// pointer to the top node of the stack
 
 public:
 stack()
@@ -29,14 +29,14 @@ top = NULL; // intialize the stack with a null top pointer
 int push (int value)
 {
 Node* newNode = new Node(); 
-Node* data = value; 
-Node* next = top;
+newNode->data = value; 
+newNode-> next = top;
 top = newNode; 
 cout << "push value :" << value << endl;
 return value;
 }
 // simply operation check if the stack in impty
-bool isEmpaty()
+bool isEmpty()
 {
 return top == NULL; // return true if the top pointer is null, indicating an empty 
 }
@@ -53,6 +53,7 @@ cout << "popped value: " << top -> data << endl;
 top = top -> next;
 }
 void peek()
+{
 if (isEmpty())
 {
 cout << "List is Empty:" << endl;
@@ -86,11 +87,26 @@ int main()
         cout << "4.exit\n";
         cout << " enter your choice:";
     }
-    switch (choice)
+    {
+        switch (choice)
     {
         case 1 :
         cout << "ennter the value to push :";
         cin >> value;
         stack.push(value);
+        break;
+        case 2:
+        stack.pop();
+        break;
+        case 3:
+        stack.peek();
+        break;
+
+        case 4:
+        cout << "exiting program. " << endl;
+        break;
+        default;
+        cout << "invalid choice. try again"
+    }
     }
 }
