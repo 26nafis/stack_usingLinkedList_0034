@@ -32,7 +32,8 @@ Node* newNode = new Node();
 Node* data = value; 
 Node* next = top;
 top = newNode; 
-
+cout << "push value :" << value << endl;
+return value;
 }
 
 }
