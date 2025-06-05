@@ -42,6 +42,14 @@ return top == NULL; // return true if the top pointer is null, indicating an emp
 }
 
 // pop operation: remove the top most element from the stack
-void 
+void pop()
+{
+if (isEmpty())
+{
+cout << "stack is empty," << endl;
+return;
+}
+cout << "popped value: " << top -> data << endl;
+}
 
 }
