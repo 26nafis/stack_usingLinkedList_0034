@@ -50,6 +50,17 @@ cout << "stack is empty," << endl;
 return;
 }
 cout << "popped value: " << top -> data << endl;
+top = top -> next;
+}
+void peek()
+if (isEmpty())
+{
+cout << "List is Empty:" << endl;
+}
+else
+{
+Node *current = top;
+while (current |= NULL)
 }
 
 }
