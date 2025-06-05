@@ -29,6 +29,7 @@ top = NULL; // intialize the stack with a null top pointer
 int push (int value)
 {
 Node* newNode = new Node(); 
+Node* data = value; 
 
 }
 
