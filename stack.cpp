@@ -30,6 +30,7 @@ int push (int value)
 {
 Node* newNode = new Node(); 
 Node* data = value; 
+Node* next = top;
 
 }
 
