@@ -35,5 +35,13 @@ top = newNode;
 cout << "push value :" << value << endl;
 return value;
 }
+// simply operation check if the stack in impty
+bool isEmpaty()
+{
+return top == NULL; // return true if the top pointer is null, indicating an empty 
+}
+
+// pop operation: remove the top most element from the stack
+void 
 
 }
